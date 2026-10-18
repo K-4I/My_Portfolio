@@ -1,0 +1,527 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: lavender;
+    color: indigo;
+    line-height: 1.6;
+    font-variant: normal;
+    font-stretch: normal;
+    word-spacing: 1px;
+    letter-spacing: 0.2px;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: indigo;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 4px solid mediumorchid;
+    position: relative;
+    width: 100%;
+}
+
+/* Profile Area */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Image */
+header img {
+    width: 85px;
+    height: 85px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 3px solid plum;
+    object-fit: cover;
+}
+
+/* Header Text */
+.header-text {
+    margin-left: 15px;
+    min-width: 0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.tagline {
+    font-size: 16px;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.4;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: floralwhite;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: mediumorchid;
+    border: 1px solid plum;
+    text-decoration: underline;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    border-top: 2px solid indigo;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;      /* was 0, which kept it on the left */
+    padding: 14px;
+}
+
+/* Section */
+section {
+    width: 100%;
+    padding: 50px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 35px;
+    color: darkviolet;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* Articles */
+article {
+    width: 100%;
+    max-width: 1100px;   /* keeps articles from stretching too wide */
+    margin: 25px auto;   /* same top/bottom spacing, centered left/right */
+    background-color: thistle;
+    padding: 25px;
+    border: 1px solid plum;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px orchid;
+}
+
+article h3 {
+    color: indigo;
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+article h4 {
+    color: darkviolet;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+article p {
+    color: indigo;
+    margin-bottom: 12px;
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 20px;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+    line-height: 1.6;
+}
+
+/* Image and Articles Layout */
+.intro-card,
+.skill-card,
+.about-card {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Article Image */
+.article-image {
+    flex: 0 1 180px;
+    width: 180px;
+    max-width: 180px;
+    display: flex;
+    align-items: stretch;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Article Image */
+.article-image img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid darkviolet;
+}
+
+/* Article Content */
+.article-content {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Technical Skills */
+.skill-card {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+}
+
+/* Technical Skills Image */
+.skill-card .article-image {
+    flex: 0 1 180px;
+    width: 180px;
+    max-width: 180px;
+    display: flex;
+    align-items: stretch;
+}
+
+.skill-card .article-image img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    min-height: 200px;
+    object-fit: cover;
+    border: 3px solid darkviolet;
+    border-radius: 15px;
+}
+
+/* Technical Skills Content */
+.skill-card .article-content {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Technical Skills Heading */
+.skill-card .article-content h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Technical Skills Paragraph */
+.skill-card .article-content p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Technical Skills List */
+.skill-card .article-content ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* List */
+article ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px;
+}
+
+article ul li {
+    width: 100%;
+    align-items: center;
+    background-color: lavender;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-left: 4px solid mediumorchid;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+    overflow-wrap: break-word;
+}
+
+/* Project list: center the link and image inside each item */
+article ul li {
+    display: flex;
+    flex-direction: column;   /* link on top, image below */
+    align-items: center;      /* centers both horizontally */
+    justify-content: center;
+    text-align: center;
+}
+
+article ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: indigo;
+    font-weight: bold;
+}
+
+article ul li img {
+    display: block;
+    margin: 15px auto 5px;
+    width: 500px;
+    max-width: 100%;          /* shrinks on small screens */
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid burlywood;
+    object-fit: cover;        /* was "fill", which stretches/distorts images */
+}
+
+.project_list + p {
+    text-align: center;
+    text-indent: 0;
+}
+
+/* Favorite */
+.favorite-section {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.favorite-section > div {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Home Section */
+#home {
+    text-align: left;
+}
+
+/* Contact Section */
+#contact {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+/* Contact Form */
+form {
+    width: 100%;
+    background-color: thistle;
+    padding: 35px;
+    border: 1px solid plum;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.15);
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: indigo;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+}
+
+/* Form Input and Textarea */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid mediumorchid;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: lavender;
+    color: indigo;
+    text-align: left;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+/* Textarea */
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+    text-indent: 0;
+    text-align: left;
+}
+
+/* Input Focus */
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid darkviolet;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid darkviolet;
+    border-radius: 8px;
+    background-color: darkviolet;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+.buttons button:hover {
+    background-color: purple;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+    border-top: 4px solid mediumorchid;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+/* Background Image */
+.background-example {
+    background-color: lavender;
+    background-image: url("../IMAGES/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 20px;
+    border: 1px solid plum;
+    border-radius: 15px;
+}
+
+/* CSS Units */
+.unit-example {
+    width: 90%;
+    max-width: 1200px;
+    padding: 1em;
+    margin: 1rem auto;
+    min-height: 20vh;
+    border: 1px solid plum;
+    border-radius: 15px;
+    background-color: thistle;
+    font-size: 1rem;
+}
+
+/* Box Shadow */
+.shadow-example {
+    background-color: thistle;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid plum;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(75, 0, 150, 0.20);
+}
+
+/* Background Example */
+.background-section {
+    background-color: lavender;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* Image */
+img {
+    max-width: 100%;
+    height: auto;
+}

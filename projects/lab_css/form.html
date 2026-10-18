@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form - BSIT 2026-2027</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="form-container">
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <h2>Bachelor of Science in Information Technology<br>School Year 2026-2027</h2>
+
+    <form action="#" method="post">
+        <div class="row">
+            <div>
+                <label for="studnum">Student Number</label> <br>
+                <input type="text" id="studnum" name="student_number" required>
+            </div>
+            <div>
+                <label for="fullname">Full Name</label> <br>
+                <input type="text" id="fullname" name="full_name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="email">Email Address</label> <br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label> <br>
+                <input type="password" id="password" name="password" required>
+            </div>
+        </div>
+
+        <label for="mobile">Mobile Number</label> <br>
+        <input type="tel" id="mobile" name="mobile_number" placeholder="09XX-XXX-XXXX"> <br>
+
+        <label>Gender (Male/Female - radio button)</label> <br>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+
+        <label for="course">Course (BSIT, BSCS, BSIS, etc.)</label> <br>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select Course</option>
+            <option value="BSIT">BSIT</option>
+            <option value="BSCS">BSCS</option>
+            <option value="BSIS">BSIS</option>
+            <option value="ACT">ACT</option>
+        </select> <br>
+
+        <label>Hobbies (at least 3 checkboxes)</label> <br>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="hobbies" value="Coding"> Coding</label>
+            <label><input type="checkbox" name="hobbies" value="Playing Guitar"> Playing Guitar</label>
+            <label><input type="checkbox" name="hobbies" value="Gaming"> Gaming</label>
+            <label><input type="checkbox" name="hobbies" value="Reading"> Reading</label>
+            <label><input type="checkbox" name="hobbies" value="Drawing"> Drawing</label>
+        </div>
+
+        <label for="intro">Short Introduction (textarea)</label> <br>
+        <textarea id="intro" name="introduction" placeholder="Tell something about yourself..."></textarea>
+
+        <div class="buttons">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
